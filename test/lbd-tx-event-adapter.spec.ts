@@ -655,7 +655,7 @@ describe("lbd-tx-event-adapter test", () => {
     }) as EventCollectionNftRootChanged;
 
     expect("61e14383", eventCollectionNftRootChanged.contractId);
-    expect(1, eventCollectionNftRootChanged.tokenIds.size);
+    expect(1, eventCollectionNftRootChanged.tokenIds.length);
     expect(new Array(["100000080000000e"]), eventCollectionNftRootChanged.tokenIds);
     expect("100000080000000e", eventCollectionNftRootChanged.oldRootTokenId);
     expect("100000080000000f", eventCollectionNftRootChanged.newRootTokenId);
@@ -689,7 +689,7 @@ describe("lbd-tx-event-adapter test", () => {
     }) as EventCollectionNftRootChanged;
 
     expect("61e14383", eventCollectionNftRootChanged.contractId);
-    expect(1, eventCollectionNftRootChanged.tokenIds.size);
+    expect(1, eventCollectionNftRootChanged.tokenIds.length);
     expect(new Array(["100000010000000b"]), eventCollectionNftRootChanged.tokenIds);
     expect("100000010000000b", eventCollectionNftRootChanged.oldRootTokenId);
     expect("100000010000000c", eventCollectionNftRootChanged.newRootTokenId);
@@ -723,7 +723,7 @@ describe("lbd-tx-event-adapter test", () => {
 
     expect(0, eventCollectionNftRootChanged.msgIndex);
     expect("61e14383", eventCollectionNftRootChanged.contractId);
-    expect(1, eventCollectionNftRootChanged.tokenIds.size);
+    expect(1, eventCollectionNftRootChanged.tokenIds.length);
     expect(new Array(["100000080000000e"]), eventCollectionNftRootChanged.tokenIds);
     expect("100000080000000f", eventCollectionNftRootChanged.oldRootTokenId);
     expect("100000080000000e", eventCollectionNftRootChanged.newRootTokenId);
@@ -757,7 +757,7 @@ describe("lbd-tx-event-adapter test", () => {
 
     expect(0, eventCollectionNftRootChanged.msgIndex);
     expect("61e14383", eventCollectionNftRootChanged.contractId);
-    expect(1, eventCollectionNftRootChanged.tokenIds.size);
+    expect(1, eventCollectionNftRootChanged.tokenIds.length);
     expect(new Array(["100000010000000b"]), eventCollectionNftRootChanged.tokenIds);
     expect("100000080000000c", eventCollectionNftRootChanged.oldRootTokenId);
     expect("100000080000000b", eventCollectionNftRootChanged.newRootTokenId);
